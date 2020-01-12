@@ -1,4 +1,4 @@
-20.times do
+200.times do
     Article.create({
         title: Faker::GreekPhilosophers.name,
         body: Faker::GreekPhilosophers.quote
