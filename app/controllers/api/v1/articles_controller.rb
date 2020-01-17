@@ -2,7 +2,7 @@ module Api
     module V1
         class ArticlesController < ApplicationController
             def index
-                @articles = Article.order('created_at ASC').limit(20);
+                @articles = Article.order('created_at DESC').limit(20);
                 render json: {status:'SUCCESS', message:'Loaded articles',data:@articles},status: :ok
             end
 
